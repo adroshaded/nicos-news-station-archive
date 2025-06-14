@@ -1,0 +1,2 @@
+They changed the site completely and deleted all the old files, so I made this using the wayback machine. Why? Bored.
+I'll try my best at recovering each and every file but that might be pretty difficult, since the wayback machine obviously didn't archive every asset. Gotta dig through my files and ask people around.
