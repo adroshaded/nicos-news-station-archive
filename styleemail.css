@@ -1,0 +1,31 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+@font-face {
+    font-family: mssansserif;
+    src: url(/fonts/MS\ Sans\ Serif\ 8pt.ttf);
+}
+
+.emailtext { 
+    font-family: mssansserif;
+}
+
+.aaimg {
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+}
+
+.shake {
+    animation: shake .03s infinite;
+}

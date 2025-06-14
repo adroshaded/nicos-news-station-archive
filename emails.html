@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<head>
+    <title>welcome, burner.961!</title>
+    <meta charset="UTF-8">
+    <meta name="nicocorp staff login" content="Since 1967, nico's news station has kept you up to date on the latest news in America!">
+    <link rel="stylesheet" type="text/css" href="styleemail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+<body id="mainbody" style="text-align: center; overflow: hidden;">
+    <audio id="loginsound" src="assets/startup.mp3"></audio>
+    <audio id="newmail" src="assets/mail.wav"></audio>
+    <audio id="clickdown" src="assets/clickdown.wav"></audio>
+    <audio id="clickup" src="assets/clickup.wav"></audio>
+    <img src="assets/emailbg.jpg" height="100%" width="100%" style="margin: 0;
+        position: absolute;
+        z-index: -100;
+        pointer-events: none;
+        top: 7.5%;
+        filter: contrast(1);
+        left: 0%;">
+
+        <p>&nbsp;</p>
+        <span>
+            <img src="assets/nicoscorp.png" height="100%" width="100%" style="margin: 0;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                pointer-events: none;
+                filter: contrast(1);
+                height: 15%;
+                width: 16rem;
+                transform: translate(0.5%, -25%);">
+            <img src="assets/emailbannerright.jpg" height="100%" width="100%" style="margin: 0;
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                pointer-events: none;
+                filter: contrast(1);
+                height: 7.5%;
+                width: 100%;
+                z-index: -1;
+                ">
+            <a href="index.html"><p height="100%" width="100%" style="margin: 0;
+                    position: fixed;
+                    top: 3.5%;
+                    left: 0%;
+                    height: 15%;
+                    width: 1rem;
+                    text-shadow: #000 1px 1px 2px;
+                    color: white;
+                    transform: translate(55%, 3rem);">
+                    exit</p></a>
+        </span>
+
+    <span id="emailspan" style="opacity:0;">
+        <img class="aaimg" id="emailbody" src="assets/nnsmailbase.png" height="376px" width="480px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);">
+
+        <img class="aaimg" id="emailbodyopen" src="assets/nnsmailopen.png" height="376px" width="480px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            pointer-events: none;
+            z-index: 4;
+            visibility: hidden;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);">
+
+        <img class="aaimg" id="fromheader" src="assets/nnsmailfrombar.png" height="18px" width="264px" style="position: absolute;
+            background-color: #0ab45c;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(102px, -76px);">
+
+        <img class="aaimg" id="close" src="assets/nnsmailexit.png" height="14px" width="16px" style="position: absolute;
+            background-color: #0ab45c;
+            top: 50%;
+            left: 50%;
+            z-index: 15;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(226px, -175px);">
+
+        <img class="aaimg" id="back" src="assets/nnsmailback.png" height="15px" width="31px" style="position: absolute;
+            background-color: #0ab45c;
+            top: 50%;
+            left: 50%;
+            z-index: 5;
+            visibility: hidden;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(218px, -156px);">
+        
+        <a id="downloadbutton" style="visibility: hidden;" download><img id="download" class="aaimg" src="assets/download.png" height="15px" width="58px" style="position: absolute;
+            background-color: #0ab45c;
+            top: 50%;
+            left: 50%;
+            z-index: 11;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(168px, -156px);"></a>
+
+        <img class="aaimg" id="email.welcome" src="assets/emails/welcome.png" height="16px" width="264px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            visibility: hidden;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(102px, -59px);">
+
+        <img class="aaimg" id="email.curious" src="assets/emails/curious.png" height="16px" width="264px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            visibility: hidden;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(102px, -59px);">
+        
+        <img class="aaimg" id="email.brooks" src="assets/emails/brooks.png" height="16px" width="264px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            visibility: hidden;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(102px, -59px);">
+        
+        <img class="aaimg" id="dragger" src="assets/nnsmailtop.png" height="24px" width="480px" style="position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%) translate(0px, -176px);">
+
+        <p id="mailcount" class="emailtext" style="position: absolute;
+            color: black;
+            top: 50%;
+            left: 50%;
+            font-size: 12px;
+            text-align: left;
+            z-index: 10;
+            -ms-transform: translate(0%, -50%);
+            transform: translate(0%, -50%) translate(-232px, 164px);">
+            0 item(s) in Inbox
+        </p>
+
+        <p id="mailinfo" class="emailtext" style="position: absolute;
+            color: rgb(179, 179, 179);
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            visibility: hidden;
+            font-size: 12px;
+            text-align: left;
+            transform: translate(-228px, -148px);">
+        </p>
+
+        <p id="mailcontents" class="emailtext" style="position: absolute;
+            color: black;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            width: 460px;
+            font-size: 12px;
+            text-align: left;
+            transform: translate(-228px, -125px);">
+        </p>
+    </span>
+    
+</body>
+
+<script>
+    var emails = ["email.welcome", "email.curious", "email.brooks"]
+    var move = ["emailbody", "mailinfo", "mailcount", "fromheader", "close", "emailbodyopen", "back", "download", "mailcontents"];
+    var scale = ["dragger"];
+
+    var doubleClicked = false;
+    
+    var alphabet = "abcdefghijklmnopqrstuvwxyz0123456789";
+    alphabet = alphabet + alphabet + alphabet + "!@#$%^&*().,/<>='-";
+    var fullAlphabet = alphabet + alphabet + alphabet;
+
+    function runCipher(cipherText, cipherOffset) {
+        cipherOffset = (cipherOffset % alphabet.length);
+        var cipherFinish = '';
+
+        for (var i = 0; i < cipherText.length; i++) {
+            var letter = cipherText[i];
+            var isUpperCase = (letter === letter.toUpperCase());
+            var lowerCaseLetter = letter.toLowerCase();
+            
+            var index = alphabet.indexOf(lowerCaseLetter);
+            if (index === -1) {
+                cipherFinish += letter;
+            } else {
+                index = ((index + cipherOffset) % alphabet.length) + alphabet.length;
+                var nextLetter = fullAlphabet[index];
+                if (isUpperCase && /[a-z]/i.test(letter)) {
+                    nextLetter = nextLetter.toUpperCase();
+                }
+                cipherFinish += nextLetter;
+            }
+        }
+        
+        return cipherFinish;
+    }
+
+    var mailContents = {
+        "email.welcome": ["-l6a0ipgsqi efsevh%-'l6aJmrepp2 nywx ksx xli ythexi jsv syv w2wxiqw sr q2 irh= erh rsxmgih 2syv reqi tst yt%-fva-fvaQ2 reqi’w Nsvher= erh M 0svo yrhiv rmgs’w gsvtsvexmsr ew e xigl gsrwypxerx> M’q ewwyqmrk 2sy’zi fiir lmvih yrhiv xli weqi tswmxmsr xss> Mx’w fiir e psrk xmqi wmrgi M’zi wiir e ri0 egxmzi eggsyrx jvsq xlmw wmxi>-fva-fvaYrjsvxyrexip2 RRW lew leh ps0 xvejjmg wmrgi xli gsvtsvexmsr tywlih xli ehstxmsr sj gefpi xipizmwmsr= ls0iziv M lezi fiir xewoih 0mxl qemrxemrmrk mx> Pygomp2= 0i’zi fiir efpi xs wgezirki evsyrh syv wivzivw erh oiit e wqepp gsqqyrmx2 sj qiqfivw hihmgexih>-fva-fvaM ors0 xlex 0i’pp kix xli sttsvxyrmx2 xs 0svo sr wsqixlmrk xskixliv mr xli jyxyvi>-fva-fvaFiwx sj pygo=-fvaNsvher", "j.sinclair@nicocorp", "burner.961@nicocorp", -4, "assets/emails/@j.sinclair to @burner.691 - welcome.pdf"],
+        "email.curious": ["am7bhzwntzx?a-m7bSt1 ymfy 3tz’wj qtllji ns' 3tz rnlmy’0j stynhji xtrj sj1 fwynhqjx htrj zu ts tzw xnyj= Ymjxj ‘iwfkyx’ fwj g3 tzw 1wnyjwx fy ymj sjy1twp 1mt jnymjw htzqis’y knsnxm fs fwynhqj tw htzqis’y hts0nshj ymj sjy1twp ny 1fx 1twym3 tk uzgqnxmnsl=agwbagwbYmjwj’x xtrj wjfqq3 nsyjwjxynsl xyzkk ns xtrj tk ymjr= N’qq yw3 fsi ljy ymjnw twnlnsfq 1wnyjwx yt xmtty 3tz f rjxxflj nk 3tz’wj hzwntzx=agwbagwbGjxy tk qzhp=agwbOtwifs", "j.sinclair@nicocorp", "burner.961@nicocorp", -5, "assets/emails/@j.sinclair to @burner.691 - curious.pdf"],
+        "email.brooks": ["'k5-Gu< Eurrnv Elrjudsk1'=k5-Mrugdq vhqw ph dq hcpdlo hduolhu vd1lqj 1rx pljkw eh lqwhuhvwhg lq dq duwlfoh L zdv zulwlqj derxw Gu< Eurrnv< L grq’w nqrz> shuvrqdoo1 L zdvq’w deoh wr ilqg pxfk diwhu kh jrw kluhg e1 qlfr’v frusrudwlrq<'eu-'eu-L grq’w wklqn zdv zruwk jhwwlqj sxeolvkhg> exw Mrugdq vdlg kh zdqwhg 1rx wr kdyh lw> vr…'eu-'eu-Ohw ph nqrz li 1rx qhhg dq1wklqj<'eu-Pdunxv", "m.green@nicocorp", "burner.961@nicocorp", -3]
+    }
+
+    for (let other of emails) {
+        move.push(other);
+        scale.push(other);
+    }
+
+    for (let other of move) {
+        scale.push(other);
+    }
+
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function showMail(mailId) {
+        setCookie(mailId + ".seen", "true", 1000);
+        document.getElementById("emailbodyopen").style.visibility = "visible";
+        document.getElementById("back").style.visibility = "visible";
+        if (mailContents[mailId][4]) {
+            document.getElementById("downloadbutton").style.visibility = "visible";
+            document.getElementById("downloadbutton").href = mailContents[mailId][4]
+        }
+        document.getElementById("mailinfo").style.visibility = "visible";
+        document.getElementById("mailcontents").style.visibility = "visible";
+
+        document.getElementById("mailinfo").innerHTML = "from " + mailContents[mailId][1] + ", to " + mailContents[mailId][2];
+        if (mailContents[mailId][3]) { 
+            document.getElementById("mailcontents").innerHTML = runCipher(mailContents[mailId][0], mailContents[mailId][3]);
+        }
+        else {
+            document.getElementById("mailcontents").innerHTML = mailContents[mailId][0];
+        }
+    }    
+    
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } 
+        else {
+            elmnt.onmousedown = dragMouseDown;
+        }
+      
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            document.onmousemove = elementDrag;
+        }
+      
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+
+            for (let other of move) {
+                document.getElementById(other).style.top = (elmnt.offsetTop - pos2) + "px";
+                document.getElementById(other).style.left = (elmnt.offsetLeft - pos1) + "px";
+            }
+
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+      
+        function closeDragElement() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
+
+    function updateName () {
+        var total = 0;
+        for (let mail of emails.reverse()) 
+        {
+            if (document.getElementById(mail).style.visibility == "visible") 
+            {
+                total = total + 1;
+            }
+        }
+        document.getElementById("mailcount").innerHTML = total + " item(s) in Inbox";
+    }
+
+    function refreshEmails () {
+        var total = 0;
+        for (let mail of emails.reverse()) 
+        {
+            if (getCookie(mail) == "true") 
+            {
+                document.getElementById(mail).style.visibility = "visible";
+                document.getElementById(mail).style.transform += " translate(0, " + total*16 + "px)";
+                
+                total = total + 1;
+            }
+        }
+        document.getElementById("mailcount").innerHTML = total + " item(s) in Inbox";
+    }
+
+    dragElement(document.getElementById("dragger"));
+
+    document.getElementById("close").onclick = function() {
+        window.location.href = "index.html";
+    }
+
+    document.getElementById("back").onclick = function() {
+        document.getElementById("emailbodyopen").style.visibility = "hidden";
+        document.getElementById("back").style.visibility = "hidden";
+        document.getElementById("downloadbutton").style.visibility = "hidden";
+        document.getElementById("mailinfo").style.visibility = "hidden";
+        document.getElementById("mailcontents").style.visibility = "hidden";
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {  
+        if (getCookie("logged-in") != "true") {
+            window.location.href = "index.html";
+            return
+        }
+
+        document.getElementById("newmail").volume = 0.33;
+        document.getElementById("clickdown").volume = 0.33;
+        document.getElementById("clickup").volume = 0.33;
+        document.getElementById("loginsound").volume = 0.45;
+        document.getElementById("loginsound").play();
+        var progress = 0;
+        var progress2 = -400;
+        var scaledList = [];
+
+        setInterval(function(){
+            if (progress < 100) {
+                progress = progress + 2;
+
+                for (let other of scale) {
+                    if (other == "emailbody") {
+                        if (!scaledList.includes(other)) {
+                            document.getElementById(other).style.transform = document.getElementById(other).style.transform + " scale(1.25)"
+                            scaledList.push(other);
+                        }
+                        else {
+                            document.getElementById(other).style.transform = document.getElementById(other).style.transform + " scale(0.99545)"
+                        }
+                    }
+                    else {
+                        document.getElementById(other).style.opacity = progress2/100;
+                    }
+                }
+                document.getElementById("emailspan").style.opacity = progress/100;
+            }
+            else {
+                if (progress2 < 100) {
+                    progress2 = progress2 + 35;
+
+                    for (let other of scale) {
+                        if (other != "emailbody") {
+                            document.getElementById(other).style.opacity = progress2/100;
+                        }
+                    }
+                }
+            }
+        }, 25);
+
+        refreshEmails();
+        for (let mail of emails.reverse()) {
+            document.getElementById(mail).onclick = function() {
+                if ((document.getElementById(mail).style.visibility != "hidden") && (document.getElementById("emailbodyopen").style.visibility == "hidden")) {
+                    document.getElementById(mail).style["backgroundColor"] = "#0ab45c";
+                    for (let other of emails) {
+                        if (other != mail) {
+                            document.getElementById(other).style["backgroundColor"] = "#fff";
+                        }
+                    }
+                    if (doubleClicked == mail) {
+                        showMail(mail)
+                        doubleClicked = false;
+                    }
+                    else {
+                        doubleClicked = mail;
+                        setTimeout(function() {
+                            doubleClicked = false;
+                        }, 250);
+                    }
+                }
+            }
+        }
+
+        setTimeout(function() {
+            if (getCookie("email.welcome") != "true") { 
+                document.getElementById("newmail").play();
+                document.getElementById("email.welcome").style.visibility = "visible";
+                setCookie("email.welcome", "true", 1000);
+                updateName();
+            }
+        }, 4500);
+    });
+
+    function playSound(sound) {
+        const object = document.getElementById(sound);
+        const copy = object.cloneNode(true);
+        copy.volume = 0.25;
+        document.body.appendChild(copy);
+        copy.play();
+
+        setTimeout(function() {
+            copy.remove();
+        }, 1000);
+    }
+
+    document.addEventListener("mousedown", function() {
+        playSound("clickdown");
+    });
+    document.addEventListener("mouseup", function() {
+        playSound("clickup");
+    });
+</script>
+
+</html>

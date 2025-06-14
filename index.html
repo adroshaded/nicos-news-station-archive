@@ -1,0 +1,247 @@
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    WHAT ARE YOU LOOKING FOR?
+    I TOLD YOU I'D FIND A BETTER WAY.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+<!DOCTYPE html>
+<head>
+    <title>nico's news station</title>
+    <meta content="nico's news station" property="og:title"/>
+    <meta content="Since 1967, nico's news station has kept you up to date on the latest news in America!" property="og:description"/>
+    <meta content="https://nicosnewsstation.com/" property="og:url"/>
+    <meta content="assets/icon.png" property="og:image"/>
+    <meta content="#53f940" data-react-helmet="true" name="theme-color"/>
+    <meta charset="UTF-8">
+    <meta name="nico's news station" content="Since 1967, nico's news station has kept you up to date on the latest news in America!">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+    <script>
+        // load header
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+
+<body>
+    <audio id="newmail" src="assets/mail.wav"></audio>
+    <p>&nbsp;</p>
+    <header id="header"></header>
+    <div id="logged-in" width: 320px; height: 50px; padding: 10px; margin: 0; style="margin: 0;
+            position: fixed;
+            z-index: 5;
+            top: 0%;
+            left: 100%;
+            width: 13rem;
+            height: 0rem;
+            background-color: #000;
+            visibility: hidden;
+            transform: translate(-100%, 100%);">
+        
+        <table>
+            <tr>
+                <td>
+                    <img src="assets/nicoscorp.png" style="
+                            margin: 0; 
+                            width: rem; 
+                            height: 4rem; 
+                            margin-left:-10px;
+                            margin-bottom:-15px;
+                            background-color: #000;
+                            z-index: 10;
+                            ">
+                
+                    <a href="email.html">
+                        <img id="mailicon" src="assets/mail.png" style="
+                            margin: 1px; 
+                            width: 2rem;
+                            height: 2rem;
+                            margin-left:2.25rem;
+                            background-color: #000;
+                            z-index: 10;
+                            ">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+        <p style="margin-top:-5px; font-size:10px; text-align: left; background-color: #000;"><i>you are logged in with a nicocorp staff account</i></p>
+    </div>
+    <img id="remains" src="assets/12.png" height="150rem" width="150rem" z-index="1" style="margin: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        pointer-events: none;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);">
+
+    <p style="margin-bottom: -1rem;"><img src="assets/news.png" alt="NEWS header" height="50" width="300"></p>
+    <table width="600rem" height="20rem" align="center">
+        <!-- ARTICLE 1 -->
+        <tr>
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <a href="steven-moreau-case.html"><img src="assets/steven-moreau.webp" alt="Steven Moreau - photo provided by Jessica Moreau" width="200rem" height="200rem" style="float: left; margin-right: 10px;"></a>
+                    <b><i>Community Rallies as Young Boy Goes Missing During Routine Morning</b></i>
+                </h3>
+                <p class="newstext">
+                    In a startling turn of events, the tight knit community of Kellywood was shaken as Steven Moreau, aged 12, mysteriously disappeared during the morning of February 2nd, 1998. Steven, a bright and enthusiastic soccer player, was prepa...
+                </p>
+                <a href="steven-moreau-case.html" class="read-more-button">Read More</a>
+            </td>
+        </tr>
+
+        <!-- ARTICLE 2 -->
+        <tr>
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <a href="blackouts-case.html"><img src="assets/blackouts.webp" alt="Blackouts - photo provided by nicostock" width="200rem" height="200rem" style="float: left; margin-right: 10px;"></a>
+                    <b><i>Power Outages Raise Concern Across the Nation</b></i>
+                </h3>
+                <p class="newstext">
+                    The frequency of power outages are rising in communities creating unease among citizens nationwide. These outages are making everyday life difficult and raise doubts about America’s electrical infrastructure. In the recent weeks...
+                </p>
+                <a href="blackouts-case.html" class="read-more-button">Read More</a>
+            </td>
+        </tr>
+
+        <!-- ARTICLE 3 -->
+        <tr>
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <a href="spectral-science.html"><img src="assets/butterfly.webp" alt="Spectral Butterflies - photo provided by Riley Ingram" width="200rem" height="200rem" style="float: left; margin-right: 10px;"></a>
+                    <b><i>Exploring the Paranormal: Can Science Validate the Existence of Ghosts?</b></i>
+                </h3>
+                <p class="newstext">
+                    The existence of ghosts has always captivated people's imagination. Though it's occasionally dismissed as the domain of superstition and folklore, new discoveries force a deeper look at the potential for spectral entities to dwell with the living. Is science able to explain the mysterious phenomenon of ghosts?
+                </p>
+                <a href="spectral-science.html" class="read-more-button">Read More</a>
+                <h2 id="maintenance" style="color: white">This section of the site is currently under maintenance.</h2>
+            </td>
+        </tr>
+
+        <!-- ARTICLE 4 -->
+        <tr id="hidden1" style="visibility:hidden;">
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <a href="eight-twelve.html"><img src="assets/8twelve.webp" width="200rem" height="200rem" style="float: left; margin-right: 10px; opacity:0/1;"></a>
+                    <b><i>nico's corporation Expands Empire with Acquisition of 8-Twelve Chain</b></i>
+                </h3>
+                <p class="newstext">
+                    nico's corporation announced it would be acquiring the 8-Twelve convenience store chain which is a beloved store in communities all over the globe. This deal will strengthen nico's corporation's control over global trade and is their latest strategic move, marking them closer to dominance over all industries...
+                </p>
+                <a href="eight-twelve.html" class="read-more-button">See More</a>
+            </td>
+        </tr>
+
+        <!-- ARTICLE 5 -->
+        <tr id="hidden2" class="shake" style="visibility:hidden; opacity: 0">
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <a href="biography.html"><img src="assets/NNS.webp" width="200rem" height="200rem" style="float: left; margin-right: 10px; opacity:0/1; filter:brightness(.7) contrast(10)"></a>
+                    <b><i>null</b></i>
+                </h3>
+                <p class="newstext">
+                    null
+                </p>
+                <a href="biography.html" class="read-more-button" style="opacity: 0">See More</a>
+            </td>
+        </tr>
+    </table>
+    <a href="email.html" class="ha"><p style="text-align: right; margin-top: 30rem"><b><i>© 1998 nicocorp inc.</i></b></p></a>
+</body>
+
+<script>
+    var emails = ["email.welcome", "email.curious"]
+    
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("newmail").volume = 0.33;
+        
+        if ((getCookie("logged-in") == "true")) {
+            document.getElementById("logged-in").style.visibility = "visible";
+
+            document.getElementById("maintenance").remove();
+            document.getElementById("hidden1").style.visibility = "visible";
+            
+            if (getCookie("email.curious.seen") == "true") {    
+                document.getElementById("hidden2").style.visibility = "visible";
+            }
+        }
+
+        setTimeout(function() {
+            var newMail = false;
+            for (let other of emails) {
+                if ((getCookie(other) == "true") && (getCookie(other + ".seen") != "true")) {
+                    newMail = true;
+                    document.getElementById("mailicon").src = "assets/mailnotif.png";
+                }
+            }
+            if (newMail) {
+                document.getElementById("newmail").play();
+            }
+        }, 1500);
+    });
+</script>
+
+</html>

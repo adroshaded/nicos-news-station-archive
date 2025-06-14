@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <body>
+    <a href="index.html"><p height="100%" width="100%" style="margin: 0;
+            position: fixed;
+            top: 5%;
+            left: 100%;
+            height: 15%;
+            width: 1rem;
+            text-shadow: #000 1px 1px 2px;
+            transform: translate(100%, 0%) translate(-25%, 0%);">
+            exit</p></a>
+
+    <div>
+        <h1>Dr. Edward Brooks</h1>
+        <h3>A fascinating look into the inner workings of reality.</h3>
+        <img src="assets/drbrooks.jpg" alt="Dr. Brooks" style="width: 17rem; 
+        height: 20rem; 
+        object-fit: cover; 
+        filter: grayscale(100%);
+        z-index: -1;">
+        <p>Edward Brooks is a distinguished scientist and researcher in the fields of information theory and quantum physics, with a particular emphasis on entropy studies. His early interest in the secrets of the world inspired him to seek a career in the sciences. His love for quantum mechanics started to take form at the University of Cambridge, where he finished his undergraduate studies in Physics.
+        <br>
+        <br>
+        After graduating, Brooks studied information theory and quantum physics in depth for his Ph.D. at the Massachusetts Institute of Technology (MIT) in the United States. He developed an interest in the idea of entropy at this period, which would later become central to his studies and research. Hailed for his discipline, Dr. Brooks' thesis presented a revolutionary way of decreasing quantum decoherence in computer systems.
+        <br>
+        <br>   
+        Dr. Brooks became a prominent figure in quantum physics research at nico's corporation after joining the faculty. Although the nature of his work is confidential, it is thought that he is exploring the boundaries of quantum mechanics.
+        </p>
+    </div>
+</body>
+<script>
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        if (getCookie("email.curious.seen") != "true") {
+            window.location.href = "/index.html";
+            return
+        }
+        setCookie("email.brooks", "true", 1000)
+    });
+</script>
+</html>

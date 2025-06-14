@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<head>
+    <title>missing</title>
+    <meta charset="UTF-8">
+    <meta name="nico's news station" content="Since 1967, nico's news station has kept you up to date on the latest news in America!">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+<body style="background-color: black; overflow: hidden;">
+    <audio src="assets/login.wav" id="toy"></audio>
+    <audio src="assets/hsa.wav" id="hsa"></audio>
+
+    <!-- <img src="assets/static.gif" height="100%" width="100%" 
+    style="margin: 0;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        opacity: 0.125;
+        filter: blur(0.5px);
+        "> -->
+    <a id="words" style="
+        color: white;
+        margin: 0;
+        position: absolute;
+        top: 77.5%;
+        left: 50%;
+        opacity: 0.3;
+        filter: blur(1px);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);">
+    </a>
+
+    <img id="remains" src="assets/missing.jpg" alt="he loved it" height="550rem" width="600rem" z-index="1" style="margin: 0;
+        position: absolute;
+        top: 47.5%;
+        left: 50%;
+        opacity: 1;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);">
+</body>
+
+<script>
+    function click () {
+        document.getElementById("remains").style.opacity = 1;
+        document.getElementById("toy").play();
+        if ((Math.floor(Math.random() * 15) == 0) && false) {
+            setTimeout(function() {
+                document.getElementById("remains").style = "margin: 0; position: absolute; top: 40%; left: 50%; opacity: 1; pointer-events: none; filter: contrast(100); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); ease 0.5s"
+                document.getElementById("remains").style.width = "12rem"
+                document.getElementById("remains").style.height = "12rem"
+            }, 30);
+            setTimeout(function() {
+                document.getElementById("remains").style.width = "18rem"
+                document.getElementById("remains").style.height = "18rem"
+            }, 50);
+            setTimeout(function() {
+                document.getElementById("remains").style.width = "24rem"
+                document.getElementById("remains").style.height = "24rem"
+            }, 65);
+        }
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 78);
+    }
+
+    document.getElementById("words").onclick = function() {
+        click();
+    }
+    document.getElementById("remains").onclick = function() {
+        document.getElementById("hsa").play();
+        document.getElementById("words").style.visibility = "hidden";
+        document.getElementById("remains").style.opacity = 0.8;
+        document.getElementById("remains").style.width = "35rem";
+        document.getElementById("remains").style.height = "35rem";
+        setTimeout(function() {
+            document.getElementById("remains").style.width = "36rem";
+            document.getElementById("remains").style.height = "36rem";
+            document.getElementById("remains").style.opacity = 1;
+        }, 25);
+        setTimeout(function() {
+            window.location.href = "email.html";
+        }, 6500);
+    }
+    setTimeout(function() {
+        window.location.href = "index.html";
+    }, 35000);
+</script>
+
+<script>
+    const titles = ["opposite of his condition", "just what the doctor wanted", "", "you're feeding it", "the more the merrier", "all are welcome", "in his own home", "cacophony", "dont be afraid", "you seem tense", "our home is not your playground, <b><i>nicocorp</i></b>", ".E.G.D.I.R.B", "your bridge is collapsing on you", "your people are so greedy", "opposite of his condition"];
+    document.addEventListener("DOMContentLoaded", function() {
+        if (Math.floor(Math.random() * 3) != 0) {
+            document.getElementById("words").innerHTML = "";
+        } else {
+            document.getElementById("words").innerHTML = titles[Math.floor(Math.random() * titles.length)];
+        }
+        document.getElementById("remains").style.opacity = 1;
+    });
+</script>
+
+</html>

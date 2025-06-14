@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<head>
+    <title>nico's news station</title>
+    <meta content="nico's news station" property="og:title"/>
+    <meta content="Since 1967, nico's news station has kept you up to date on the latest news in America!" property="og:description"/>
+    <meta content="https://nicosnewsstation.com/" property="og:url"/>
+    <meta content="assets/icon.png" property="og:image"/>
+    <meta content="#53f940" data-react-helmet="true" name="theme-color"/>
+    <meta charset="UTF-8">
+    <meta name="nico's news station" content="Since 1967, nico's news station has kept you up to date on the latest news in America!">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&amp;display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+    <script>
+        // load header
+        $(function(){
+            $("#header").load("header.html");
+        });
+    </script>
+</head>
+    <p>&nbsp;</p>
+    <header id="header"></header>
+    <table width="800rem" height="20rem" align="center" id="mainbody">
+        <tr>
+            <td width="30%" height="100%">
+                <h3 class="newstext2">
+                    <img src="assets/8twelve.webp" id="steven" alt="news1" width="200rem" height="200rem" style="float: left; margin-right: 10px;">
+                    <b id="headerarticle"><i>nico's corporation Expands Empire with Acquisition of 8-Twelve Chain</b></i>
+                </h3>
+                <p id="d1" class="newstext3">
+                    For decades 8-Twelve has been a common name thanks to its helpful service and large selection of goods. People are wondering what will happen to competition and variety in the global market now that nico's corporation has bought the company.
+                </p>
+                <br>
+                <p id="d2" class="newstext3">
+                    This most recent acquisition is criticized by some as a further step toward monopoly status. nico's corporation already possesses substantial investments in numerous industries, including aerospace, biotechnology, and digital media. Consumer rights organizations and regulatory bodies have expressed apprehension regarding the possibility of market manipulation and the gradual reduction of consumer options.
+                </p>
+                <br>
+                <p id="d4" class="newstext3">
+                    Even with these worries, nico's corporation has reassured customers and other important parties that the purchase will improve services, expand product lines, and bring new ideas to how convenience stores work. "Our commitment is to build on the legacy of 8-Twelve and bringing our resources and technology to enhance the customer experience," said one spokesman. 
+                </p>
+            </td>
+        </tr>
+    </table>
+    <a href="email.html" class="ha"><p style="text-align: right; margin-top: 30rem"><b><i>© 1998 nicocorp inc.</i></b></p></a>
+</body>
+
+<script>    
+    function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        setCookie("email.curious", "true", 1000)
+    });
+</script>
+</html>
